@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
-
+import MainRouter from './Routers/Router';
+import context from './Store/context';
+import React, { useState } from 'react';
 function App() {
+  const [showmenu, setshowmenu] = useState(false)
+  const data = {
+    showmenu: showmenu,
+    changestatus() {
+      setshowmenu(!showmenu)
+    },
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <context.Provider value={data}>
+      <div className="App">
+        <MainRouter />
+      </div>
+    </context.Provider>
+
   );
 }
 

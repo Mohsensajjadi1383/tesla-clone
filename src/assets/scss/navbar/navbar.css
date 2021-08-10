@@ -1,0 +1,173 @@
+@font-face {
+  font-family: "GothamBook";
+  src: url("../../fonts/GothamBook.otf");
+}
+
+.navigation-item {
+  padding: 0.5rem 0.5rem;
+  color: #171a20d7;
+  text-decoration: none;
+  white-space: nowrap;
+  font-weight: 600;
+  -webkit-transition: color, background-color ease 0.7s;
+  transition: color, background-color ease 0.7s;
+  border-radius: 15px;
+  font-size: 0.95rem;
+}
+
+.navigation-item:hover {
+  background-color: #181b2113;
+  border-radius: 15px;
+  color: #171a20d7;
+}
+
+.navbar-container {
+  font-family: "GothamBook";
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+}
+
+.navbar-container .navigation-bar {
+  padding: 1rem 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.navbar-container .navigation-bar .icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 16.66666667%;
+}
+
+.navbar-container .navigation-bar .icon-container .icon-item svg {
+  inline-size: 46%;
+}
+
+.navbar-container .navigation-bar .tools-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 16.66666667%;
+}
+
+.navbar-container .navigation-bar .center-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 1250px) {
+  .navigation-bar {
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+  }
+  .center-menu {
+    display: none !important;
+  }
+  .tools-menu {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 45% !important;
+  }
+  .icon-container {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 45% !important;
+  }
+  .navigation-item {
+    display: none;
+  }
+  .tools-menu {
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
+  }
+}
+
+.navgation-menu {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.default-navigation-item {
+  padding: 0.5rem 0.5rem;
+  color: #171a20d7;
+  text-decoration: none;
+  white-space: nowrap;
+  font-weight: 600;
+  -webkit-transition: color, background-color ease 0.7s;
+  transition: color, background-color ease 0.7s;
+  border-radius: 15px;
+  font-size: 0.95rem;
+}
+
+.default-navigation-item:hover {
+  background-color: #181b2113;
+  border-radius: 15px;
+  color: #171a20d7;
+}
+
+.responsive-menu-item {
+  padding: 0.5rem 0.5rem;
+  color: #171a20d7;
+  text-decoration: none;
+  white-space: nowrap;
+  font-weight: 600;
+  -webkit-transition: color, background-color ease 0.7s;
+  transition: color, background-color ease 0.7s;
+  border-radius: 15px;
+  font-size: 0.95rem;
+}
+
+.responsive-menu-item:hover {
+  background-color: #181b2113;
+  border-radius: 15px;
+  color: #171a20d7;
+}
+
+@media only screen and (min-width: 1250px) {
+  .responsive-menu-item {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */

@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "GothamBook";
+  src: url("../../fonts/GothamBook.otf");
+}
+
+.image-container {
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "GothamBook";
+}
+
+.image-container .product-introduce {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 33.33333333%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.image-container .product-introduce .introduce-title-container {
+  text-align: center;
+}
+
+.image-container .product-introduce .introduce-btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.image-container .product-introduce .introduce-title {
+  font-weight: bold;
+  color: #171a20d7;
+  white-space: nowrap;
+}
+
+.image-container .product-introduce .introduce-explanation {
+  font-weight: 400;
+  color: #171a20d7;
+  white-space: nowrap;
+}
+
+.custom-btn {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 45%;
+  padding: 0.7rem 1.4rem;
+  border-radius: 25px;
+  border: none;
+  font-family: "GothamBook";
+  font-weight: 700;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.custom-btn:focus {
+  outline: none;
+}
+
+.black-btn {
+  background-color: rgba(24, 27, 33, 0.9);
+  color: #ffffff;
+}
+
+.white-btn {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #171a20;
+}
+
+@media only screen and (max-width: 1250px) {
+  .introduce-btn-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .custom-btn {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 100%;
+    margin-bottom: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 728px) {
+  .product-introduce {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 80% !important;
+  }
+}
+/*# sourceMappingURL=carpageitem.css.map */

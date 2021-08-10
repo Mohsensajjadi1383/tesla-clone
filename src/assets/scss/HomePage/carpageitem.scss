@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "GothamBook";
+    src: url("../../fonts/GothamBook.otf");
+}
+.image-container {
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "GothamBook";
+    .product-introduce {
+        height: 70vh;
+        display: flex;
+        flex: 0 0 auto;
+        width: 33.33333333%;
+        flex-direction: column;
+        justify-content: space-between;
+        .introduce-title-container {
+            text-align: center;
+        }
+        .introduce-btn-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .introduce-title {
+            font-weight: bold;
+            color: #171a20d7;
+            white-space: nowrap;
+        }
+        .introduce-explanation {
+            font-weight: 400;
+            color: #171a20d7;
+            white-space: nowrap;
+        }
+    }
+}
+
+.custom-btn {
+    flex: 0 0 auto;
+    width: 45%;
+    padding: 0.7rem 1.4rem;
+    border-radius: 25px;
+    border: none;
+    font-family: "GothamBook";
+    font-weight: 700;
+    font-size: 0.8rem;
+    white-space: nowrap;
+
+    &:focus {
+        outline: none;
+    }
+}
+.black-btn {
+    background-color: rgba(24, 27, 33, 0.9);
+    color: #ffffff;
+}
+.white-btn {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #171a20;
+}
+
+
+@media only screen and  (max-width: 1250px) {
+    
+    .introduce-btn-container {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+    .custom-btn{
+        flex: 0 0 auto;
+        width: 100%;
+        margin-bottom: 0.6rem;
+    }
+}
+
+@media only screen and(max-width:728px) {
+    .product-introduce{
+        flex: 0 0 auto;
+        width: 80% !important;
+    }
+}

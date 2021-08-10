@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "GothamBook";
+    src: url("../../fonts/GothamBook.otf");
+}
+
+.navigation-item {
+    padding: 0.5rem 0.5rem;
+    color: #171a20d7;
+    text-decoration: none;
+    white-space: nowrap;
+    font-weight: 600;
+    transition: color, background-color ease 0.7s;
+    border-radius: 15px;
+    font-size: 0.95rem;
+    &:hover {
+        background-color: #181b2113;
+        border-radius: 15px;
+        color: #171a20d7;
+    }
+}
+
+.navbar-container {
+    font-family: "GothamBook";
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+    .navigation-bar {
+        padding: 1rem 0.5rem;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 0 0 auto;
+            width: 16.66666667%;
+            .icon-item {
+                svg {
+                    inline-size: 46%;
+                }
+            }
+        }
+        .tools-menu {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex: 0 0 auto;
+            width: 16.66666667%;
+        }
+        .center-menu {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .navigation-bar {
+        justify-content: space-around !important;
+    }
+    .center-menu {
+        display: none !important;
+    }
+    .tools-menu {
+        flex: 0 0 auto;
+        width: 45% !important;
+    }
+    .icon-container {
+        flex: 0 0 auto;
+        width: 45% !important;
+    }
+    .navigation-item {
+        display: none;
+    }
+    .tools-menu {
+        justify-content: flex-end !important;
+    }
+}
+
+.navgation-menu {
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.default-navigation-item {
+    padding: 0.5rem 0.5rem;
+    color: #171a20d7;
+    text-decoration: none;
+    white-space: nowrap;
+    font-weight: 600;
+    transition: color, background-color ease 0.7s;
+    border-radius: 15px;
+    font-size: 0.95rem;
+    &:hover {
+        background-color: #181b2113;
+        border-radius: 15px;
+        color: #171a20d7;
+    }
+}
+.responsive-menu-item {
+    padding: 0.5rem 0.5rem;
+    color: #171a20d7;
+    text-decoration: none;
+    white-space: nowrap;
+    font-weight: 600;
+    transition: color, background-color ease 0.7s;
+    border-radius: 15px;
+    font-size: 0.95rem;
+    &:hover {
+        background-color: #181b2113;
+        border-radius: 15px;
+        color: #171a20d7;
+    }
+}
+@media only screen and (min-width: 1250px) {
+    .responsive-menu-item {
+        display: none !important;
+    }
+}
